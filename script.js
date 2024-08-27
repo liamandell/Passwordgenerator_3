@@ -11,14 +11,14 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword(){
   let passwordlength =prompt('how long do you need your password?')
   if(passwordlength<8||passwordlength>128){
-    alert('password must be great than 8 and less than 128')
+    alert('password must be greater than 8 and less than 128')
     return null
     
   }
   const wantnum=confirm('would you like numbers?')
   const wantsym=confirm('would you like symbols?')
-  const wantuppercase=confirm('would you like uppercase?')
-  const wantlowercase=confirm('would you like lowercase?')
+  const wantuppercase=confirm('would you like to use uppercase?')
+  const wantlowercase=confirm('would you like to use lowercase?')
   if(wantnum===true){
     newpassword += numbers
   }

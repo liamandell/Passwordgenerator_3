@@ -9,7 +9,7 @@ let password=''
 // these are refrences to the element
 var generateBtn = document.querySelector("#generate");
 function generatePassword(){
-  let passwordlength =prompt('how long do you need your password?')
+  let passwordlength =prompt('how long do you need your password to be?(number 8-12)')
   if(passwordlength<8||passwordlength>128){
     alert('password must be greater than 8 and less than 128')
     return null
@@ -34,7 +34,7 @@ function generatePassword(){
     newpassword +=lowercaseletters
   }
   if(!wantnum && !wantsym && !wantuppercase && !wantlowercase){
-    alert('select at least one choice')
+    alert('select yes or no')
     return null
   }
   for(let i=0;i<passwordlength;i++){
